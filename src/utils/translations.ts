@@ -1,0 +1,156 @@
+export type Language = 'bn' | 'en';
+
+export const t = {
+  bn: {
+    appName: 'Mafhuz Device Recovery',
+    tagline: 'বৈধ ও নিরাপদ অ্যান্ড্রয়েড ডিভাইস রিকভারি ও সার্ভিস হাব',
+    home: 'হোম',
+    diagnostic: 'ডায়াগনস্টিক',
+    recoveryGuide: 'রিকভারি গাইড',
+    installments: 'কিস্তি ও রশিদ',
+    complaints: 'অভিযোগ সহায়তা',
+    privacy: 'গোপনীয়তা ও নীতি',
+    tracker: 'ট্র্যাকার ও ডিভাইস',
+    tools: 'প্রো টুলস ও ল্যাব',
+    aiAssistant: 'এআই সহকারী',
+    settings: 'সেটিংস',
+    darkMode: 'ডার্ক মোড',
+    lightMode: 'লাইট মোড',
+    
+    // Home screen
+    homeTitle: 'অ্যান্ড্রয়েড ডিভাইস লক সমস্যার সঠিক ও বৈধ সমাধান',
+    homeSubtitle: 'অননুমোদিত বা ঝুঁকিপূর্ণ পদ্ধতি এড়িয়ে আপনার ডিভাইসের অফিসিয়াল ও নিরাপদ সমাধান জানুন।',
+    warningBannerTitle: '⚠️ ডেটা নিরাপত্তা ও নৈতিক সতর্কতা',
+    warningBannerText: 'আমরা কোনো অননুমোদিত বাইপাস বা হ্যাক সমর্থন করি না। ফ্যাক্টরি রিসেট বা হার্ড রিসেট করার পূর্বে মনে রাখবেন এতে ডিভাইসের সমস্ত ছবি, কন্ট্যাক্ট ও ডেটা স্থায়ীভাবে মুছে যেতে পারে।',
+    
+    // Lock types overview
+    lockTypesTitle: 'লক সমস্যার ধরন ও সংক্ষিপ্ত বিশ্লেষণ',
+    screenLockTitle: '১. স্ক্রিন লক (PIN / Pattern / Password)',
+    screenLockDesc: 'প্যাটার্ন বা পিন ভুলে যাওয়া। অফিসিয়াল গুগল অ্যাকাউন্ট ও রিকভারি মোড দিয়ে সমাধানযোগ্য, তবে ডেটা মুছে যাওয়ার ঝুঁকি থাকে।',
+    frpLockTitle: '২. Google FRP লক (Factory Reset Protection)',
+    frpLockDesc: 'রিসেটের পর পূর্বের জিমেইল ও পাসওয়ার্ড চাওয়া। এটি গুগল সিকিউরিটির অবিচ্ছেদ্য অংশ; ডিভাইস মালিকের নিজস্ব ক্রেডেনশিয়াল আবশ্যক।',
+    emiLockTitle: '৩. কিস্তি বা ফাইন্যান্স লক (EMI / Knox / PayJoy Lock)',
+    emiLockDesc: 'পেমেন্ট বকেয়া থাকলে বিক্রেতা কর্তৃক লক। পেমেন্ট সম্পন্ন করার পর ক্লিয়ারেন্স রশিদ নিয়ে ভেন্ডর সার্ভারের মাধ্যমে বৈধ আনলক করা হয়।',
+    vivoY21HubTitle: 'Vivo Y21 বিশেষ ট্রাবলশুটিং হাব',
+    vivoY21HubDesc: 'Vivo Y21 সিরিজের ফাস্টবুট, রিকভারি মোড ও হ্যাং/লুপ সমস্যার ধাপে ধাপে অনুমোদিত গাইড।',
+
+    // Diagnostic form
+    diagFormTitle: 'ডিভাইস ডায়াগনস্টিক ও রিকভারি অনুসন্ধান',
+    diagFormSubtitle: 'আপনার ফোনের ব্র্যান্ড, মডেল এবং স্ক্রিনে দেখানো বার্তা নির্বাচন করুন:',
+    selectBrand: 'ব্র্যান্ড নির্বাচন করুন',
+    selectModel: 'মডেল নির্বাচন করুন',
+    selectLockType: 'লকের ধরন বা স্ক্রিনের বার্তা',
+    imeiOptional: 'IMEI বা সিরিয়াল নম্বর (ঐচ্ছিক - অফলাইন মেমোরির জন্য)',
+    purchaseProofQuestion: 'আপনার কাছে ক্রয়ের বৈধ প্রমাণ বা চালান (Invoice) আছে?',
+    startDiagnosis: 'সমাধান ও গাইড দেখুন',
+    resetForm: 'রিসেট করুন',
+
+    // Receipt Section
+    receiptsTitle: 'কিস্তি পেমেন্ট ও রশিদ ব্যবস্থাপনা',
+    receiptsSubtitle: 'ডিভাইসের কিস্তি পরিশোধের হিসাব রাখুন ও ডিজিটাল রশিদ তৈরি করুন।',
+    newPaymentBtn: 'নতুন কিস্তি এন্ট্রি',
+    searchReceipts: 'রশিদ নম্বর, নাম বা ফোন দিয়ে খুঁজুন...',
+    paidInstallment: 'পরিশোধিত কিস্তি',
+    remainingDue: 'বকেয়া পরিমাণ',
+    totalPrice: 'মোট মূল্য',
+    nextDueDate: 'পরবর্তী কিস্তির তারিখ',
+    downloadSlip: 'রশিদ প্রিন্ট / সংরক্ষণ',
+
+    // Complaints Section
+    complaintsTitle: 'পেমেন্ট-পরবর্তী অভিযোগ ড্রাফটার',
+    complaintsSubtitle: 'কিস্তি পরিশোধের পরও ফোন লক থাকলে ডিলার বা কর্তৃপক্ষের জন্য আনুষ্ঠানিক আইনি অভিযোগপত্র তৈরি করুন।',
+    newComplaintBtn: 'নতুন অভিযোগ তৈরি করুন',
+    complaintNo: 'অভিযোগ আইডি',
+    status: 'অবস্থা',
+    copyComplaint: 'অভিযোগপত্র কপি করুন',
+    printComplaint: 'অভিযোগপত্র প্রিন্ট করুন',
+
+    // Common
+    yes: 'হ্যাঁ',
+    no: 'না',
+    warning: 'সতর্কতা',
+    officialMethod: 'অফিসিয়াল পদ্ধতি',
+    cautionDataLoss: 'ফ্যাক্টরি রিসেট করলে সব ডেটা মুছে যাবে!',
+    close: 'বন্ধ করুন',
+    save: 'সংরক্ষণ করুন',
+    delete: 'মুছুন',
+    search: 'অনুসন্ধান',
+    allRightsReserved: 'সর্বস্বত্ব সংরক্ষিত • Mafhuz Device Recovery',
+  },
+  en: {
+    appName: 'Mafhuz Device Recovery',
+    tagline: 'Legitimate & Safe Android Device Recovery Hub',
+    home: 'Home',
+    diagnostic: 'Diagnostic',
+    recoveryGuide: 'Recovery Guide',
+    installments: 'Installments & Receipts',
+    complaints: 'Complaint Assist',
+    privacy: 'Privacy & Terms',
+    tracker: 'Tracker & Info',
+    tools: 'Pro Tools & Lab',
+    aiAssistant: 'AI Advisor',
+    settings: 'Settings',
+    darkMode: 'Dark Mode',
+    lightMode: 'Light Mode',
+
+    // Home screen
+    homeTitle: 'Legitimate Solutions for Android Device Lock Issues',
+    homeSubtitle: 'Avoid unauthorized risks and find official, safe recovery methods for your smartphone.',
+    warningBannerTitle: '⚠️ Data Safety & Ethical Disclaimer',
+    warningBannerText: 'We do not support unauthorized security bypasses. Performing a factory or hard reset will permanently erase all photos, contacts, and personal data from your device.',
+
+    // Lock types overview
+    lockTypesTitle: 'Understanding Android Lock Types',
+    screenLockTitle: '1. Screen Lock (PIN / Pattern / Password)',
+    screenLockDesc: 'Forgotten pattern or PIN. Recoverable through Google Find My Device or official recovery mode, but user data may be erased.',
+    frpLockTitle: '2. Google FRP Lock (Factory Reset Protection)',
+    frpLockDesc: 'Requires previous Google account credentials after reset. An official security layer; original owner credentials or purchase invoice required.',
+    emiLockTitle: '3. Installment / Finance Lock (EMI / Knox Lock)',
+    emiLockDesc: 'Triggered by retailers for unpaid dues. Requires payment clearance and verification slip to request authorized server unlocking.',
+    vivoY21HubTitle: 'Vivo Y21 Specialized Troubleshooting Hub',
+    vivoY21HubDesc: 'Official recovery, Fastboot sequence, and bootloop assistance for Vivo Y21 models.',
+
+    // Diagnostic form
+    diagFormTitle: 'Device Diagnostic & Recovery Inquiry',
+    diagFormSubtitle: 'Select your phone brand, model, and the lock message displayed on screen:',
+    selectBrand: 'Select Brand',
+    selectModel: 'Select Model',
+    selectLockType: 'Lock Type or Screen Message',
+    imeiOptional: 'IMEI or Serial Number (Optional - for local log)',
+    purchaseProofQuestion: 'Do you have legitimate proof of purchase (Invoice/Cash Memo)?',
+    startDiagnosis: 'View Solution & Guide',
+    resetForm: 'Reset Form',
+
+    // Receipt Section
+    receiptsTitle: 'Installment Payments & Receipt Organizer',
+    receiptsSubtitle: 'Record device installments, monitor dues, and generate payment receipts.',
+    newPaymentBtn: 'Record New Installment',
+    searchReceipts: 'Search by receipt #, customer, or phone...',
+    paidInstallment: 'Paid Installments',
+    remainingDue: 'Remaining Balance',
+    totalPrice: 'Total Price',
+    nextDueDate: 'Next Due Date',
+    downloadSlip: 'Print / Save Receipt',
+
+    // Complaints Section
+    complaintsTitle: 'Post-Payment Complaint Assistance',
+    complaintsSubtitle: 'Draft a factual, formal complaint when a device remains locked after payment completion.',
+    newComplaintBtn: 'Create New Complaint',
+    complaintNo: 'Complaint ID',
+    status: 'Status',
+    copyComplaint: 'Copy Complaint Letter',
+    printComplaint: 'Print Complaint Letter',
+
+    // Common
+    yes: 'Yes',
+    no: 'No',
+    warning: 'Warning',
+    officialMethod: 'Official Method',
+    cautionDataLoss: 'Factory reset will erase all personal data!',
+    close: 'Close',
+    save: 'Save',
+    delete: 'Delete',
+    search: 'Search',
+    allRightsReserved: 'All rights reserved • Mafhuz Device Recovery',
+  },
+};

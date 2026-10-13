@@ -1,0 +1,77 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile document",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid"]
+    },
+    "Member": {
+      "title": "Member",
+      "description": "Organization member profile",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "bloodGroup": { "type": "string" },
+        "district": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["name", "bloodGroup"]
+    },
+    "BloodRequest": {
+      "title": "BloodRequest",
+      "description": "Emergency blood donation request",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "patientName": { "type": "string" },
+        "bloodGroup": { "type": "string" },
+        "hospital": { "type": "string" },
+        "phone": { "type": "string" },
+        "status": { "type": "string" },
+        "requestedAt": { "type": "string" }
+      },
+      "required": ["patientName", "bloodGroup", "hospital", "phone"]
+    },
+    "Activity": {
+      "title": "Activity",
+      "description": "Organizational activities and welfare logs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["title", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Stores application user accounts"
+    },
+    "/members/{memberId}": {
+      "schema": "Member",
+      "description": "Stores organization member profiles"
+    },
+    "/bloodRequests/{requestId}": {
+      "schema": "BloodRequest",
+      "description": "Stores emergency blood donation requests"
+    },
+    "/activities/{activityId}": {
+      "schema": "Activity",
+      "description": "Stores welfare and service activity records"
+    }
+  }
+}
